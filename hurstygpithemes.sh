@@ -90,7 +90,7 @@ function gui_hurstygpithemes() {
             fi
             ((i++))
         done
-        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (7 Themes as at 25 October 2019)" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (12 Themes as at 29 October 2019)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         [[ -z "$choice" ]] && break
@@ -143,13 +143,18 @@ function gui_hurstygpithemes() {
 
 function gpi_themes() {
     local themes=(
-        'RetroHursty69 GPi_SuperSweet'
-        'RetroHursty69 GPi_PopBox'
-        'RetroHursty69 GPi_GPiBoy'
+        'RetroHursty69 GPi_Bluray'
+        'RetroHursty69 GPi_Circuit'
         'RetroHursty69 GPi_CosmicRise'
+        'RetroHursty69 GPi_GPiBoy'
         'RetroHursty69 GPi_GBGreen'
-        'RetroHursty69 GPi_Trio'
-        'RetroHursty69 GPi_HeyChromeyOfficial'        
+        'RetroHursty69 GPi_HeyChromeyOfficial'
+        'RetroHursty69 GPi_PopBox'
+        'RetroHursty69 GPi_Retroroid'
+		'RetroHursty69 GPi_SuperSweet'
+        'RetroHursty69 GPi_Sublime'
+		'RetroHursty69 GPi_Soda'
+		'RetroHursty69 GPi_Trio'
     )
     while true; do
         local theme
