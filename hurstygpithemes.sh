@@ -90,7 +90,7 @@ function gui_hurstygpithemes() {
             fi
             ((i++))
         done
-        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (13 Themes as at 30 October 2019)" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (14 Themes as at 30 October 2019)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         [[ -z "$choice" ]] && break
@@ -156,6 +156,7 @@ function gpi_themes() {
         'RetroHursty69 GPi_Sublime'
 		'RetroHursty69 GPi_Soda'
 		'RetroHursty69 GPi_Trio'
+		'RetroHursty69 GPi_UniFlyered'
     )
     while true; do
         local theme
