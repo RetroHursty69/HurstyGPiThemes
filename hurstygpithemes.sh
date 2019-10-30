@@ -73,7 +73,7 @@ function gui_hurstygpithemes() {
         options+=(U "Update install script - script will exit when updated")
         options+=(E "Enable ES bootup theme randomizer")
         options+=(D "Disable ES bootup theme randomizer")
-        options+=(F "GPi Themes (7 Themes)")				
+        options+=(F "GPi Themes (14 Themes)")				
 
         local i=1
         for theme in "${themes[@]}"; do
