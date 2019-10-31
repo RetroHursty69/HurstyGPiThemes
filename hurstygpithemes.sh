@@ -73,7 +73,7 @@ function gui_hurstygpithemes() {
         options+=(U "Update install script - script will exit when updated")
         options+=(E "Enable ES bootup theme randomizer")
         options+=(D "Disable ES bootup theme randomizer")
-        options+=(F "GPi Themes (14 Themes)")				
+        options+=(F "GPi Themes (15 Themes)")				
 
         local i=1
         for theme in "${themes[@]}"; do
@@ -90,7 +90,7 @@ function gui_hurstygpithemes() {
             fi
             ((i++))
         done
-        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (14 Themes as at 30 October 2019)" 22 76 16)
+        local cmd=(dialog --default-item "$default" --backtitle "Hursty's ES GPi Themes Installer" --menu "Hursty's ES GPi Themes Installer - (15 Themes as at 31 October 2019)" 22 76 16)
         local choice=$("${cmd[@]}" "${options[@]}" 2>&1 >/dev/tty)
         default="$choice"
         [[ -z "$choice" ]] && break
@@ -152,6 +152,7 @@ function gpi_themes() {
         'RetroHursty69 GPi_HeyChromeyOfficial'
         'RetroHursty69 GPi_PopBox'
         'RetroHursty69 GPi_Retroroid'
+        'RetroHursty69 GPi_SteelChromey'
 		'RetroHursty69 GPi_SuperSweet'
         'RetroHursty69 GPi_Sublime'
 		'RetroHursty69 GPi_Soda'
