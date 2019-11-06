@@ -18,7 +18,11 @@ git clone "https://github.com/RetroHursty69/HurstyGPiThemes.git" "/tmp/hursty"
 cp /tmp/hursty/hurstygpithemes.sh /home/pi/RetroPie/retropiemenu
 chmod 777 /home/pi/RetroPie/retropiemenu/hurstygpithemes.sh
 cp /tmp/hursty/hurstygpithemes.png /home/pi/RetroPie/retropiemenu/icons
-mkdir /home/pi/scripts
+if [[ -d "/home/pi/scripts" ]]; then
+     #nothing
+else
+    mkdir /home/pi/scripts
+fi
 cp /tmp/hursty/themerandom.sh /home/pi/scripts
 chmod 777 /home/pi/scripts/themerandom.sh
 
